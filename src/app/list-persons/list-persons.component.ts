@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Person } from '../models/person/person';
 
 @Component({
   selector: 'app-list-persons',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-persons.component.css']
 })
 export class ListPersonsComponent implements OnInit {
+  
+  message: string = '';
+  persons: Person[] = [];
 
   constructor() { }
 

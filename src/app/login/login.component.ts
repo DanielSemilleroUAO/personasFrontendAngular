@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  username = 'daniel';
+  password = '';
+  errorMessage = 'Invalid Credential';
+  invalidLogin = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleLogin(){
+  }
+
+  handleBasicAuthLogin(){
+
   }
 
 }
